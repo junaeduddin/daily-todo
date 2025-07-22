@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="p-10 space-y-6 bg-gray-50 min-h-screen">
+
+  <!-- 1. Navbar Button -->
+  <button class="px-5 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition">Sign Up</button>
+
+  <!-- 2. Login Button -->
+  <button type="submit" class="w-full sm:w-60 py-3 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition">Login</button>
+
+  <!-- 3. Card Action -->
+  <button class="w-full sm:w-64 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-lg transition-colors">Add to Cart</button>
+
+  <!-- 4. Modal Actions -->
+  <div class="flex gap-4">
+    <button class="px-5 py-2 rounded-md bg-gray-300 text-gray-800 hover:bg-gray-400 transition">Cancel</button>
+    <button class="px-5 py-2 rounded-md bg-red-600 text-white hover:bg-red-700 transition">Delete</button>
+  </div>
+
+  <!-- 5. Disabled -->
+  <button class="px-6 py-2 rounded-md bg-gray-400 text-white cursor-not-allowed opacity-60" disabled>Disabled</button>
+
+  <!-- 6. Social Button -->
+  <button class="flex items-center gap-2 px-6 py-2 border border-gray-300 rounded-md hover:bg-gray-100 transition w-full sm:w-80">
+    <img src="https://img.icons8.com/color/24/google-logo.png" alt="Google" />
+    Continue with Google
+  </button>
+
+  <!-- 7. Responsive with Icon -->
+  <button class="flex items-center gap-2 px-5 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition w-full sm:w-auto">
+    <img src="https://img.icons8.com/ios-filled/20/ffffff/phone.png" alt="Phone" />
+    Call Now
+  </button>
+
+  <!-- 8. Icon Only -->
+  <button class="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-gray-700 text-white transition">
+    <img src="https://img.icons8.com/ios-filled/20/ffffff/settings.png" alt="Settings" />
+  </button>
+
+  <!-- 9. Rounded Full -->
+  <button class="px-8 py-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 text-sm font-medium transition">
+    Get Started
+  </button>
+
+  <!-- 10. Dark Mode Aware -->
+  <button class="px-6 py-2 rounded-md bg-white text-gray-900 hover:bg-gray-100 border border-gray-300 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 transition">
+    Dark Mode Aware
+  </button>
+
+  <!-- 11. Loading Button -->
+  <button class="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition" disabled>
+    <svg class="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 00-8 8z"></path>
+    </svg>
+    Loading...
+  </button>
+
+  <!-- 12. Toggle Button -->
+  <button class="px-6 py-2 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-300 transition data-[active=true]:bg-blue-600 data-[active=true]:text-white" data-active="true">
+    Toggle Active
+  </button>
+
+  <!-- 13. Group Hover Button -->
+  <div class="group relative w-64 p-5 border rounded-lg hover:shadow-md transition">
+    <p class="mb-2">This is a card content.</p>
+    <button class="opacity-0 group-hover:opacity-100 transition bg-blue-600 text-white px-4 py-2 rounded-md">
+      Learn More
+    </button>
+  </div>
+
+  <!-- 14. Filter / Tab Buttons -->
+  <div class="flex gap-2">
+    <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300">All</button>
+    <button class="px-4 py-2 bg-blue-600 text-white rounded-lg">Active</button>
+    <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300">Completed</button>
+  </div>
+
+</div>
+    <!-- Social Media Buttons -->
+
+  <!-- Facebook Button -->
+  <button class="flex items-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg w-full sm:w-auto">
+    <img src="https://img.icons8.com/ios-filled/20/ffffff/facebook-new.png" alt="Facebook Icon" />
+    Continue with Facebook
+  </button>
+
+  <!-- GitHub Button -->
+  <button class="flex items-center gap-3 bg-gray-800 hover:bg-gray-900 text-white px-5 py-3 rounded-lg w-full sm:w-auto">
+    <img src="https://img.icons8.com/ios-filled/20/ffffff/github.png" alt="GitHub Icon" />
+    Sign in with GitHub
+  </button>
+
+  <!-- Apple Button -->
+  <button class="flex items-center gap-3 bg-black text-white px-5 py-3 rounded-lg hover:bg-gray-900 w-full sm:w-auto">
+    <img src="https://img.icons8.com/ios-filled/20/ffffff/mac-os.png" alt="Apple Icon" />
+    Sign in with Apple
+  </button>
+
+  <!-- Icon Only Circle Button -->
+  <button class="w-12 h-12 rounded-full bg-indigo-600 hover:bg-indigo-700 flex items-center justify-center text-white">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+    </svg>
+  </button>
+
+  <!-- Button with Badge -->
+  <div class="relative inline-block">
+    <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+      Notifications
+    </button>
+    <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs px-2 py-0.5 rounded-full">4</span>
+  </div>
+
+  <!-- Tooltip Button -->
+  <div class="group relative inline-block">
+    <button class="bg-gray-700 text-white px-5 py-2 rounded-lg hover:bg-gray-800">
+      Hover Me
+    </button>
+    <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block bg-black text-white text-sm px-3 py-1 rounded">
+      Tooltip Text
+    </div>
+  </div>
+
+  <!-- Toggle Button -->
+  <button class="px-6 py-2 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-300 transition data-[active=true]:bg-green-600 data-[active=true]:text-white" data-active="true">
+    Toggle Active
+  </button>
+
+    <!-- Group Hover Button -->
+    <div class="flex gap-4">
+        <button class="px-5 py-2 rounded-md bg-gray-300 text-gray-800 hover:bg-gray-400 transition">Cancel</button>
+        <button class="px-5 py-2 rounded-md bg-red-600 text-white hover:bg-red-700 transition">Delete</button>
+    </div>
+
+
+    <!-- Download Button -->
+    <div>
+        <button class="flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+    <path d="M3 14a1 1 0 011-1h3v-2H5a1 1 0 00-1 1v2zm7-10a1 1 0 00-1 1v8l-2-2a1 1 0 00-1.41 1.41l4 4a1 1 0 001.41 0l4-4a1 1 0 00-1.41-1.41l-2 2V5a1 1 0 00-1-1z" />
+  </svg>
+  Download
+</button>
+</div>
+
+
+<!-- Edit Button -->
+ <div>
+    <button class="flex items-center gap-1 text-sm text-gray-700 hover:text-blue-600">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536M9 11l6.536-6.536a2 2 0 112.828 2.828L11.828 13H9v-2z" />
+  </svg>
+  Edit
+</button>
+
+ </div>
+
+
+ <!-- Save Button -->
+<div>
+    <button class="flex items-center gap-2 px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+  </svg>
+  Save Changes
+</button>
+
+</div>
+
+<!-- Delete Button -->
+<div>
+    <button class="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md transition">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+    <path d="M6 8a1 1 0 011 1v6a1 1 0 11-2 0V9a1 1 0 011-1zm6 0a1 1 0 011 1v6a1 1 0 11-2 0V9a1 1 0 011-1z" />
+    <path fill-rule="evenodd" d="M4 3a1 1 0 011-1h10a1 1 0 011 1v1H4V3zm1 3h10v10a2 2 0 01-2 2H7a2 2 0 01-2-2V6z" clip-rule="evenodd" />
+  </svg>
+  Delete
+</button>
+
+</div>
+
+<!-- Add to Cart Button -->
+<div>
+    <button class="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-3 rounded-md transition">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7a1 1 0 00.9 1.5H17m-10 0a1 1 0 110 2m10-2a1 1 0 110 2" />
+  </svg>
+  Add to Cart
+</button>
+
+</div>
+
+<!-- Continue with Google Button -->
+<div>
+    <button class="flex items-center gap-3 px-6 py-2 border border-gray-300 rounded-md hover:bg-gray-100 transition w-full sm:w-80">
+  <img src="https://img.icons8.com/color/24/google-logo.png" alt="Google" />
+  Continue with Google
+</button>
+
+</div>
+
+<!-- Call Now Button -->
+<div>
+    <button class="flex items-center gap-2 px-5 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
+  <img src="https://img.icons8.com/ios-filled/20/ffffff/phone.png" alt="Phone Icon" />
+  Call Now
+</button>
+
+</div>
+
+        <div class="p-10 space-y-6 bg-gray-50 min-h-screen">
+            <h1 class="text-2xl font-bold text-center mb-6">Button Variations</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Buttons will be inserted here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
