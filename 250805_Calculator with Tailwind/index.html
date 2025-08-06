@@ -8,27 +8,27 @@
 </head>
 <body>
     <div class="container mx-auto p-2 max-w-md border border-solid rounded-lg shadow-xl align-center" id="calculator">
-        <input type="text" id="display" class="w-full p-4 text-2xl border border-gray-300 rounded mb-4 text-right" readonly placeholder="0" >
-        <div class="grid grid-cols-4 gap-2 border border-gray-300" id="buttons">
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick=""> C </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick=""> Del </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('%')"> % </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('/')"> / </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('7')"> 7 </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('8')"> 8 </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('9')"> 9 </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('*')"> * </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('4')"> 4 </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('5')"> 5 </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('6')"> 6 </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('+')"> + </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('1')"> 1 </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('2')"> 2 </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('3')"> 3 </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('-')"> - </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('0')"> 0 </button>
-            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold" onclick="appendToDisplay('.')"> . </button>
-            <button class="bg-sky-600 p-4 hover:bg-sky-900 hover:text-white font-semibold" onclick="calculateResult('=')"> = </button>
+        <input type="text" id="display" class="w-full p-4 text-2xl border border-bottom border-gray-300 font-semibold rounded mb-4 text-right" readonly placeholder="0" >
+        <div class="grid grid-cols-4 gap-2 " id="buttons">
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="clearDisplay() "> C </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick=" deleteLastCharacter() "> Del </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('%')"> % </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('/')"> / </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('7')"> 7 </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('8')"> 8 </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('9')"> 9 </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('*')"> * </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('4')"> 4 </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('5')"> 5 </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('6')"> 6 </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('+')"> + </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('1')"> 1 </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('2')"> 2 </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('3')"> 3 </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('-')"> - </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('0')"> 0 </button>
+            <button class="bg-gray-300 p-4 hover:bg-gray-500 hover:text-white font-semibold rounded-md" onclick="appendToDisplay('.')"> . </button>
+            <button class="bg-sky-600 p-4 hover:bg-sky-900 hover:text-white font-semibold rounded-md" onclick="calculateResult('=')"> = </button>
             
             
 
