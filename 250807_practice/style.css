@@ -11,7 +11,8 @@ div#container {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
+
 }
 
 body {
@@ -20,5 +21,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #eddb0e;
+    margin: 0;
+    gap: 20px;
 }
